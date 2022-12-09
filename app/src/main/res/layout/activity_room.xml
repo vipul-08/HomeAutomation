@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:weightSum="9"
+    android:orientation="vertical"
+    tools:context=".RoomActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/roomName"
+        android:text="Room Name"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lightLayout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/light_off"
+                android:id="@+id/lightImage"
+                android:layout_weight="4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/lightText"
+                android:layout_weight="1"
+                android:text="Light: OFF"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fanLayout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/fanImage"
+                android:src="@drawable/fan_off"
+                android:layout_weight="4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/fanText"
+                android:layout_weight="1"
+                android:text="Fan: OFF"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nightBulbLayout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/nightBulbImage"
+                android:src="@drawable/bulb_off"
+                android:layout_weight="4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/nightBulbText"
+                android:text="Bulb: OFF"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/socketLayout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/socketImage"
+                android:src="@drawable/socket_off"
+                android:layout_weight="4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/socketText"
+                android:layout_weight="1"
+                android:text="Socket: OFF"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
